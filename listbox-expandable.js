@@ -60,7 +60,7 @@ window.addEventListener('load', function () {
   
   aria.ListboxButton.prototype.hideListbox = function () {
     aria.Utils.addClass(this.listbox.listboxNode, 'hidden');
-    this.button.removeAttribute('aria-expanded');
+    this.button.setAttribute('aria-expanded', 'false');
   };
   
   aria.ListboxButton.prototype.onFocusChange = function (focusedItem) {
